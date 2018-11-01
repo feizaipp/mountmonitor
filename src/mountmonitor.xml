@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<node name="/">
+  <interface name="org.freedesktop.MountMonitor.Base">
+    <signal name="MountAdded">
+      <arg name="serial" type="s"/>
+      <arg name="vendor" type="s"/>
+      <arg name="model" type="s"/>
+      <arg name="uuid" type="s"/>
+    </signal>
+
+    <signal name="MountRemoved">
+      <arg name="serial" type="s"/>
+      <arg name="vendor" type="s"/>
+      <arg name="model" type="s"/>
+      <arg name="uuid" type="s"/>
+    </signal>
+  </interface>
+</node>
